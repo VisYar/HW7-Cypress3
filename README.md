@@ -1,5 +1,7 @@
 # HW7-Cypress3
-Интеграционные тесты. Проект с test suite с API-тестами для Swagger (создание, правка и удаление пользователя). Подключение проекта к Dashboard
+Интеграционные тесты. Проект с test suite с API-тестами для Swagger (создание, правка и удаление пользователя). Подключение проекта к Dashboard.
+
+Ссылка на проект в Dashboard: https://cloud.cypress.io/projects/z49zox/runs/1/overview
  
  
 Это интересно:
