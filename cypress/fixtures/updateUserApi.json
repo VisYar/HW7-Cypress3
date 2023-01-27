@@ -1,9 +1,9 @@
 {
-  "id": 12345,
-  "username": "lunasun",
-  "firstName": "Luna",
-  "lastName": "Sun",
-  "email": "lunasun@gmail.com",
+  "id": 1234567,
+  "username": "Vira",
+  "firstName": "Ira",
+  "lastName": "Voronova",
+  "email": "vira@gmail.com",
   "password": "654321",
   "phone": "88888888888",
   "userStatus": 1

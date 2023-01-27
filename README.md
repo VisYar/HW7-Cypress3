@@ -1,5 +1,12 @@
 # HW7-Cypress3
 Интеграционные тесты. Проект с test suite с API-тестами для Swagger (создание, правка и удаление пользователя). Подключение проекта к Dashboard
+ 
+ 
+Это интересно:
+1. https://dev.to/murillowelsi/series/12873
+ 
+ 
+ 
  ## Задача 3. Интеграционные тесты
   
   1. Создайте новый проект с test suite (используйте `describe()`) с API-тестами для [проекта](https://petstore.swagger.io/#/).

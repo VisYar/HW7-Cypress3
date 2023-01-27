@@ -35,3 +35,10 @@ Cypress.Commands.add("updateUser", (username, body) => {
 Cypress.Commands.add("deleteUser", (username) => {
   cy.request("DELETE", `/user/${username}`);
 });
+
+Cypress.Commands.add("getUser", (userName) => {
+  cy.request({
+    url: `/user/${userName}`,
+    failOnStatusCode: false,
+  });
+});
