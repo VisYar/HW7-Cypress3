@@ -28,6 +28,10 @@ Cypress.Commands.add("addUser", (body) => {
   cy.request("POST", "/user", body);
 });
 
-Cypress.Commands.add("updateUser", (id, body) => {
-  cy.request("PUT", `/user/${id}`, body);
+Cypress.Commands.add("updateUser", (username, body) => {
+  cy.request("PUT", `/user/${username}`, body);
+});
+
+Cypress.Commands.add("deleteUser", (username) => {
+  cy.request("DELETE", `/user/${username}`);
 });

@@ -6,19 +6,27 @@ describe('API tests', () => {
   it('Add new user', () => {
     cy.addUser(body)
       .then((response) => {
+        cy.log(JSON.stringify(response.body));
         expect(response.status).to.eq(200);
       });
   });
 
   it('Update user', () => {
     cy.addUser(body);
-    cy.updateUser(body.id, updateBody)
+    cy.updateUser(body.username, updateBody)
       .then((response) => {
+        cy.log(JSON.stringify(response.body));
         expect(response.status).eq(200);
-    });
+      });
   });
 
-  it.skip('Delete user', () => {
-    
+  it('Delete user', () => {
+    cy.addUser(body);
+    cy.deleteUser(body.username)
+      .then((response) => {
+        cy.log(JSON.stringify(response.body));
+        expect(response.status).eq(200)
+      });
   });
+
 });
