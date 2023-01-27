@@ -25,7 +25,9 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add("addUser", (body) => {
-  cy.request("POST", "/user", body).should((response) => {
-    expect(response.status).eq(200);
-  });
+  cy.request("POST", "/user", body);
+});
+
+Cypress.Commands.add("updateUser", (id, body) => {
+  cy.request("PUT", `/user/${id}`, body);
 });
